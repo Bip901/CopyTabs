@@ -1,0 +1,26 @@
+{
+    "name": "Copy Tabs",
+    "version": "1.0.3",
+    "description": "Copy/paste the open tabs.",
+	"action": {
+	  "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+	"icons": {
+	  "64": "icon.png"
+	},
+	"commands": {
+		"_execute_action": {
+			"suggested_key": {
+				"default": "Alt+C"
+			},
+			"description": "Activate the extension"
+		}
+	},
+	"permissions": [
+	  "tabs",
+	  "clipboardWrite",
+	  "clipboardRead"
+	],
+    "manifest_version": 3
+}

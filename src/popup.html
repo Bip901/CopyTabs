@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Copy Tabs</title>
+  <style>
+	button {
+		width:128px;
+		height:32px;
+		margin-bottom:6px;
+	}
+	label.checkbox {
+		display: inline-block;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	.tooltip {
+	  position: relative;
+	  display: inline-block;
+	  border-bottom: 1px dotted black;
+	}
+	.tooltip .tooltiptext {
+	  visibility: hidden;
+	  width: 120px;
+	  background-color: black;
+	  color: #fff;
+	  text-align: center;
+	  border-radius: 6px;
+	  padding: 5px 0;
+	  position: absolute;
+	  z-index: 1;
+	}
+	.tooltip:hover .tooltiptext {
+	  visibility: visible;
+	  width: 140px;
+	  top: 100%;
+	  left: 50%;
+	  margin-left: -70px;
+	}
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <button id="btnCopySelected">Copy Selected</button>
+  <button id="btnCopy" autofocus>Copy</button><br/>
+  <button id="btnPaste">Paste</button><br/>
+  <label class="checkbox tooltip">
+	  <input type="checkbox" id="chkMultiWindow" style="vertical-align:middle;"/>
+		  <span style="vertical-align:middle;">Multiple Windows</span>
+		  <span class="tooltiptext">Affects both copy & paste</span>
+  </label>
+  <br/>
+  <p id="txtStatus" style="display:none;color:green;text-align:center;font-size:14px;">---</p>
+</body>
+</html>
